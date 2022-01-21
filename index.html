@@ -2,15 +2,51 @@
 <html lang="KO">
 	<head>
 		<meta charset="UTF-8">
-		<title>KBO HOF STATS</title>
-		<link rel="stylesheet" href="style.css">
+		<title>KBO STAT</title>
+		<style>
+			body {
+				margin: 0;
+			}
+
+			.nav-container {
+				display: flex;
+				flex-direction: row;
+				width: 100%;
+				margin: 0;
+				padding: 0;
+				background-color: darkred;
+				list-style-type: none;
+
+				position: fixed;
+				top: 0;
+			}
+
+			.nav-item {
+				padding:  15px;
+				cursor:  pointer;
+			}
+
+			.nav-item a {
+				text-align: center;
+				text-decoration: none;
+				color: white;
+			}
+
+			.nav-item:nth-child(1) {
+				background-color: indianred;
+			}
+
+			.nav-item:hover {
+				background-color: palevioletred;
+			}
+		</style>
 	</head>
 	<body>
 		<nav>
-			<ul class="navBar">
-				<li class="navPart"><a href="">메인</a></li>
-				<li class="navPart"><a href="https://leeseungwu.github.io/kbostat/kbohofstatistics">KBO 명예의 전당 통계</a></li>
-				<li class="navPart"><a href="">시뮬레이션</a></li>
+			<ul class="nav-container">
+				<li class="nav-item"><a href="">메인</a></li>
+				<li class="nav-item"><a href="https://leeseungwu.github.io/kbostat/kbohofstatistics">KBO 명예의 전당 통계</a></li>
+				<li class="nav-item"><a href="">시뮬레이션</a></li>
 			</ul>
 		</nav>
 
